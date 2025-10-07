@@ -74,15 +74,29 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-[slide-in-right_1s_ease-out_0.4s_both]">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#76E0EA]/20 to-[#5BC4CF]/20 rounded-3xl blur-3xl animate-[pulse-glow_3s_ease-in-out_infinite]"></div>
-              <div className="relative bg-white p-8 rounded-3xl shadow-2xl hover:shadow-[#76E0EA]/20 transition-all duration-500 animate-[float_6s_ease-in-out_infinite]">
-                <Image
-                  src="/visual-collaboration.svg"
-                  alt="ビジュアルコラボレーション"
-                  width={500}
-                  height={400}
-                  className="w-full h-auto"
-                />
+              {/* 背景グロー効果 */}
+              <div className="absolute -inset-8 bg-gradient-to-r from-[#76E0EA]/30 to-[#5BC4CF]/30 rounded-full blur-3xl animate-[pulse-glow_4s_ease-in-out_infinite]"></div>
+              
+              {/* メイン画像コンテナ */}
+              <div className="relative">
+                {/* 装飾的なグラデーションボーダー */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#76E0EA] to-[#5BC4CF] rounded-3xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity duration-500"></div>
+                
+                {/* 画像 */}
+                <div className="relative animate-[float_6s_ease-in-out_infinite]">
+                  <Image
+                    src="/visual-collaboration.svg"
+                    alt="ビジュアルコラボレーション"
+                    width={700}
+                    height={600}
+                    className="w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700"
+                    priority
+                  />
+                </div>
+                
+                {/* 装飾的な要素 */}
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-[#76E0EA] to-[#5BC4CF] rounded-full opacity-20 blur-2xl animate-[pulse-glow_5s_ease-in-out_infinite_1s]"></div>
+                <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-[#5BC4CF] to-[#76E0EA] rounded-full opacity-20 blur-2xl animate-[pulse-glow_6s_ease-in-out_infinite_2s]"></div>
               </div>
             </div>
           </div>
@@ -133,22 +147,22 @@ export default function Home() {
                   <strong className="text-slate-900">お客様企業の課題</strong>を深く理解し、ビジネス目標を実現する生成AIシステムを<strong className="text-slate-900">オーダーメイドで開発</strong>します。
                   ChatGPT、Claude、Geminiなど最新のLLMを活用し、御社に最適なソリューションを提供します。
                 </p>
-                <ul className="space-y-3 text-slate-600">
-                  <li className="flex items-start gap-2 group-hover:translate-x-1 transition-transform duration-300">
-                    <span className="text-[#76E0EA] mt-1 text-lg">●</span>
-                    <span><strong className="text-slate-800">AI導入支援：</strong>現状分析から導入計画まで</span>
+                <ul className="space-y-4 text-slate-600">
+                  <li className="flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300">
+                    <div className="text-[#76E0EA]  text-lg">●</div>
+                    <div><strong className="text-slate-800">AI導入支援：</strong>現状分析から導入計画まで</div>
                   </li>
-                  <li className="flex items-start gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-75">
-                    <span className="text-[#76E0EA] mt-1 text-lg">●</span>
-                    <span><strong className="text-slate-800">カスタム開発：</strong>業務に特化したAIシステム</span>
+                  <li className="flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-75">
+                    <div className="text-[#76E0EA]  text-lg">●</div>
+                    <div><strong className="text-slate-800">カスタム開発：</strong>業務に特化したAIシステム</div>
                   </li>
-                  <li className="flex items-start gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-100">
-                    <span className="text-[#76E0EA] mt-1 text-lg">●</span>
-                    <span><strong className="text-slate-800">システム連携：</strong>既存環境へのシームレスな統合</span>
+                  <li className="flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-100">
+                    <div className="text-[#76E0EA]  text-lg">●</div>
+                    <div><strong className="text-slate-800">システム連携：</strong>既存環境へのシームレスな統合</div>
                   </li>
-                  <li className="flex items-start gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-150">
-                    <span className="text-[#76E0EA] mt-1 text-lg">●</span>
-                    <span><strong className="text-slate-800">継続支援：</strong>運用・保守・機能拡張まで</span>
+                  <li className="flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-150">
+                    <div className="text-[#76E0EA]  text-lg">●</div>
+                    <div><strong className="text-slate-800">継続支援：</strong>運用・保守・機能拡張まで</div>
                   </li>
                 </ul>
               </div>
@@ -166,7 +180,7 @@ export default function Home() {
                     <div className="relative bg-gradient-to-br from-[#76E0EA]/5 to-[#5BC4CF]/5 p-6 rounded-2xl">
                       <Image
                         src="/writing-a-blog.svg"
-                        alt="自社プロダクト運営"
+                        alt="プロダクト運営"
                         width={400}
                         height={300}
                         className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
@@ -181,22 +195,14 @@ export default function Home() {
                   <strong className="text-slate-900">Yumenium独自の</strong>生成AIサービスを企画・開発・運営しています。
                   誰もが手軽にAIの恩恵を受けられる<strong className="text-slate-900">直接利用可能なプロダクト</strong>として、継続的な価値提供を行います。
                 </p>
-                <ul className="space-y-3 text-slate-600">
-                  <li className="flex items-start gap-2 group-hover:translate-x-1 transition-transform duration-300">
-                    <span className="text-[#76E0EA] mt-1 text-lg">●</span>
-                    <span><strong className="text-slate-800">SaaSサービス：</strong>すぐに使えるAIツール群</span>
+                <ul className="space-y-4 text-slate-600">
+                  <li className="flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-75">
+                    <div className="text-[#76E0EA]  text-lg">●</div>
+                    <div><strong className="text-slate-800">最新技術：</strong>最新の技術を活用したプロダクト</div>
                   </li>
-                  <li className="flex items-start gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-75">
-                    <span className="text-[#76E0EA] mt-1 text-lg">●</span>
-                    <span><strong className="text-slate-800">プラットフォーム：</strong>AIを活用した統合環境</span>
-                  </li>
-                  <li className="flex items-start gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-100">
-                    <span className="text-[#76E0EA] mt-1 text-lg">●</span>
-                    <span><strong className="text-slate-800">継続改善：</strong>ユーザーの声を反映した進化</span>
-                  </li>
-                  <li className="flex items-start gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-150">
-                    <span className="text-[#76E0EA] mt-1 text-lg">●</span>
-                    <span><strong className="text-slate-800">サポート体制：</strong>安心して使えるサポート</span>
+                  <li className="flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300 delay-100">
+                    <div className="text-[#76E0EA]  text-lg">●</div>
+                    <div><strong className="text-slate-800">継続改善：</strong>ユーザーの声を反映して進化</div>
                   </li>
                 </ul>
               </div>
