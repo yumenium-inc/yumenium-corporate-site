@@ -19,7 +19,7 @@ export default function Home() {
                 Contact
               </a>
               <a
-                href="https://forms.gle/xxxxxxxxxx"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSedOYkhEDQh5i7lrHIkJLHw74Sx-UAHu9u9HBlljPgTkrvVKQ/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2.5 bg-gradient-to-r from-[#76E0EA] to-[#5BC4CF] text-white rounded-full hover:shadow-lg hover:shadow-[#76E0EA]/50 hover:scale-105 transition-all duration-300"
@@ -58,7 +58,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-[fade-in-up_1s_ease-out_0.6s_both]">
                 <a
-                  href="https://forms.gle/xxxxxxxxxx"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSedOYkhEDQh5i7lrHIkJLHw74Sx-UAHu9u9HBlljPgTkrvVKQ/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 bg-gradient-to-r from-[#76E0EA] to-[#5BC4CF] text-white rounded-full font-semibold hover:shadow-xl hover:shadow-[#76E0EA]/50 hover:scale-105 transition-all duration-300 text-center"
@@ -244,7 +244,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="https://forms.gle/xxxxxxxxxx"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSedOYkhEDQh5i7lrHIkJLHw74Sx-UAHu9u9HBlljPgTkrvVKQ/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 bg-white text-[#5BC4CF] rounded-full font-semibold hover:shadow-xl hover:scale-110 transition-all duration-300"
